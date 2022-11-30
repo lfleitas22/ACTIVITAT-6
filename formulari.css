@@ -1,0 +1,21 @@
+/*Modifica tots el h1 dins d'un div*/
+div h1{
+    color: rgb(225, 97, 50);
+    font-weight: bold;
+    text-align: center;
+}
+h5{
+    font-weight: bold;
+    color: black;
+}
+body{
+    text-align: center;
+}
+/*Modifica les clases text*/
+.text{
+   width: 200px;
+}
+/*modifica si te el id number*/
+#number{
+    width: 300px; 
+}

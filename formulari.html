@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <!--Vincula l'html amb el css-->
+		<link rel="stylesheet" href="formulari.css">
+	</head>
+	<body>
+        <!--Amb el div creem un selector combinat-->
+		<div>
+			<h1>El meu primer formulari</h1>
+			<h5>Les teves dades personals:</h5>
+		</div>
+        <!--Amb form creem formularis i amb l'action vinculem els htmls-->
+		<form action="resultat.html">
+            <!--Amb el label mostrem un element a l'usuari-->
+            <!--Aqui começen el formularis nom,cognom i edat-->
+			<label for="fname">Nom:</label>
+            <!--Crea un formulari per escriure text-->
+            <!--Amb la class podem seleccionar un formulari-->
+			<input class="text" type="text" id="fname" name="Nom">
+			<label for="lname">Cognom:</label>
+			<input class="text" type="text" id="lname" name="Cognom">
+            <br><br>
+			<label for="age">Edat:</label>
+			<input id="number" type="number" id="age" name="Edat" value="0">
+			<h5>Marca els llenguatges de programació que més t'agraden:</h5>
+            <!--Aqui comença el selector d'opcions entre HTML,CSS i XML-->
+			<input type="checkbox" id="html" checked><!--Valor predeterminat-->
+			<label for="html"> HTML</label><br>
+			<input type="checkbox" id="css">
+			<label for="css"> CSS</label><br>
+			<input type="checkbox" id="xml">
+			<label for="xml"> XML</label>
+			<h5>Selecciona el cicle formatiu que vols cursasr:</h5>
+			<label for="">Selecciona el cicle:</label><br>
+            <!--Aqui comença el selector d'una opcio entre Asix,Dam i Daw-->
+			<input type="radio" id="asix" checked><!--Valor predeterminat-->
+			<label for="asix">ASIX</label><br>
+			<input type="radio" id="dam">
+			<label for="dam">DAM</label><br>
+			<input type="radio" id="daw">
+			<label for="daw">DAW</label>
+			<br><br>
+			<label for="curs">Selecciona el curs:</label>
+            <!--Aqui comença el selector entre primer i segon-->
+			<select name="curs" id="curs">
+				<option value="primer" selected>Primer</option><!--Valor predeterminat-->
+				<option value="segon">Segon</option>
+			</select>
+			<br><br>
+			<label for="">Observacions:</label>
+            <br><br>
+            <!--Aqui comença el text area on es poden escriure observacions-->
+			<textarea id="textar" name="observacions" rows="10" cols="50">Escriu el teu missatge</textarea>
+			<br><br>
+            <!--Aquest submit amb l'action del form redirigeix a l'altre html-->
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>
